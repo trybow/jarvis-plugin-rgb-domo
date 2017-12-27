@@ -1,6 +1,6 @@
-*ALLUM[^ ]+ (lampname1)==jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=switchlight&idx=1&switchcmd=On"; say message
-*ETEIN[^ ]+ (lampname1)==jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=switchlight&idx=1&switchcmd=Off"; say message
-(lampname1) + *ROUGE* == jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=ff0000&brightness=100&iswhite=false"; say message
+*ALLUM[^ ]+ ($lampname1)==jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=switchlight&idx=1&switchcmd=On"; say message
+*ETEIN[^ ]+ ($lampname1)==jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=switchlight&idx=1&switchcmd=Off"; say message
+($lampname1) + *ROUGE* == jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=ff0000&brightness=100&iswhite=false"; say message
 (lampname1) + *BLEU* == jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=0048ff&brightness=100&iswhite=false"; say message
 (lampname1) + *VERT* == jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=00ff09&brightness=100&iswhite=false"; say message
 (lampname1) + *JAUNE* == jv_curl "http://192.168.1.33:8082/json.htm?type=command&param=setcolbrightnessvalue&idx=1&hex=ffea00&brightness=100&iswhite=false"; say message
